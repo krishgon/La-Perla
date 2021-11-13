@@ -12,3 +12,22 @@
     --gold: #D7BE69;
     --blue: #144990;
 }
+
+.landing-spot{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-spot > .title {
+    font-family: 'Playfair Display';
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 4.25rem;
+}
+
+/* sir lines daldo */
+
+
