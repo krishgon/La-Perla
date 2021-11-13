@@ -2,9 +2,3 @@
     background-image: url('./Assets/gallery/anceintBgUsable.jpeg');
     background-position: center;  
 } 
-
-.main-gallery {
-    margin: 4rem 4rem 4rem 4rem;
-    display: grid;
-    border: 1px solid black;
-}

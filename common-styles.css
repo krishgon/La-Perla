@@ -19,12 +19,17 @@
 
 /*Navigation Bar*/
 nav{
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+.navbar-content{
+    width: 100vw;
     display: flex;
-    padding: 1vh 4vw;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    padding: 1vh 4vw;
 }
 
 /*Hamburger*/
@@ -41,13 +46,11 @@ nav{
     cursor: pointer;
 }
 
-.hamburger-icon,#menu-toggle{
-    position: absolute;
-    top: 4vh;
-    left: 4vw;
-    z-index: 5;
+.main-navigation input{
+    display: none;
 }
 
+/*Making Navbar Functional*/
 .navbar-list{
     position: fixed;
     inset: 0;
@@ -62,17 +65,9 @@ nav{
     transition: all 4s linear;
 }
 
-.main-navigation input{
-    display: none;
-}
-
 #menu-toggle:checked ~ .navbar-list{
     clip-path: circle(5000px at 0 0);
 } 
-
-.logo img{
-    width: max(8vw,8rem);
-}
 
 /*Styling Navbar list items*/
 .navbar-list li{
@@ -99,6 +94,11 @@ nav{
     text-decoration: none;
 }
 
+/*Styling other Navbar components*/
+.logo img{
+    width: max(8vw,8rem);
+}
+
 .homepage-cta-1 button{
     padding: 0.75vh 2vw;
     border: none;
@@ -116,14 +116,18 @@ nav{
     align-items: center;
 }
 
-.landing-spot > .title {
+.section-title{
     font-family: 'Playfair Display';
-    display: flex;
-    align-items: center;
     color: white;
     font-size: 4.25rem;
 }
 
-
+.section-title::before,.section-title::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: white;
+}
 
 
