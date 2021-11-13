@@ -52,19 +52,22 @@ nav{
     position: fixed;
     inset: 0;
     background-color: var(--gold);
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     list-style-type: none;
     z-index: 0;
+    clip-path: circle(0px at 0 0);
+    transition: all 4s ease-in-out;
 }
 
-.navbar-list, .main-navigation input{
+.main-navigation input{
     display: none;
 }
 
 #menu-toggle:checked ~ .navbar-list{
-    display: flex;
+    clip-path: circle(10000px at 0 0);
 } 
 
 .logo img{
