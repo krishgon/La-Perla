@@ -19,17 +19,10 @@
 
 /*Navigation Bar*/
 nav{
-    position: fixed;
-    top: 0;
-    z-index: 5;
-}
-
-.navbar-content{
-    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vh 4vw;
+    padding: 2vh 4vw;
 }
 
 /*Hamburger*/
@@ -50,24 +43,42 @@ nav{
     display: none;
 }
 
+.hamburger-cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100px;
+    background-color: white;
+    display: none;
+    z-index: 5;
+}
+
 /*Making Navbar Functional*/
 .navbar-list{
     position: fixed;
     inset: 0;
-    background-color: var(--gold);
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
     list-style-type: none;
-    z-index: 0;
+    font-size: max(1rem,2.5vh);
+    background-color: var(--gold);
+
     clip-path: circle(0px at 0 0);
     transition: all 4s linear;
 }
 
 #menu-toggle:checked ~ .navbar-list{
     clip-path: circle(5000px at 0 0);
-} 
+}
+
+#menu-toggle:checked ~ .hamburger-cover{
+    display: block;
+}
 
 /*Styling Navbar list items*/
 .navbar-list li{
