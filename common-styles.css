@@ -59,7 +59,7 @@ nav{
     list-style-type: none;
     z-index: 0;
     clip-path: circle(0px at 0 0);
-    transition: all 4s ease-in-out;
+    transition: all 4s linear;
 }
 
 .main-navigation input{
@@ -67,7 +67,7 @@ nav{
 }
 
 #menu-toggle:checked ~ .navbar-list{
-    clip-path: circle(10000px at 0 0);
+    clip-path: circle(5000px at 0 0);
 } 
 
 .logo img{
