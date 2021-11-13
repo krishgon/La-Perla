@@ -41,12 +41,30 @@ nav{
     cursor: pointer;
 }
 
+.hamburger-icon,#menu-toggle{
+    position: absolute;
+    top: 4vh;
+    left: 4vw;
+    z-index: 5;
+}
+
+.navbar-list{
+    position: fixed;
+    inset: 0;
+    background-color: var(--gold);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    z-index: 0;
+}
+
 .navbar-list, .main-navigation input{
     display: none;
 }
 
-.menu-toggle:checked ~ .navbar-list{
-    display: block;
+#menu-toggle:checked ~ .navbar-list{
+    display: flex;
 } 
 
 .logo img{
