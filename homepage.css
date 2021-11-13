@@ -1,0 +1,7 @@
+.hero-spot{
+    height: 100vh;
+    background-image: url(./assets/home/lightTownSnow.jpg);
+    background-size: cover;
+    color: white;
+}
+
