@@ -93,21 +93,3 @@ nav{
     font-size: 0.75rem;
     cursor: pointer;
 }
-.landing-spot{
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.landing-spot > .title {
-    font-family: 'Playfair Display';
-    display: flex;
-    align-items: center;
-    color: white;
-    font-size: 4.25rem;
-}
-
-/* sir lines daldo */
-
-

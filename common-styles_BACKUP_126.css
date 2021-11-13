@@ -82,6 +82,7 @@ nav{
     text-decoration: none;
 }
 
+<<<<<<< HEAD
 #menu-toggle:checked ~ .navbar-list{
     display: block;
 }
@@ -93,6 +94,7 @@ nav{
     font-size: 0.75rem;
     cursor: pointer;
 }
+=======
 .landing-spot{
     height: 70vh;
     display: flex;
@@ -111,3 +113,4 @@ nav{
 /* sir lines daldo */
 
 
+>>>>>>> b974a93ec485240b191bc45f034cdf484bcbb177
