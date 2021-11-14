@@ -16,12 +16,8 @@
     <!--Common navbar implementation for all pages-->
     <nav>
     
-        <div id="hamburger">
-            <img src="./assets/menu_white_36dp.svg" alt="hamburger-icon">
-            MENU
-        </div>
-
-        
+        <label for="menu-toggle" class="hamburger"><img src="./assets/menu_white_36dp.svg" alt="hamburger-icon">MENU</label>
+        <input type="checkbox" name="menu-toggle" id="menu-toggle"> 
 
         <div id="navbar-list">
             <ul>
@@ -62,15 +58,7 @@
     </div>
 
     <div class="ribbon"></div>
-    
 </section>
     
 </body>
-
-<script>
-    document.querySelector('#hamburger').addEventListener('click',()=>{
-        document.querySelector('#navbar-list').classList.toggle('open');
-    })
-</script>
-
 </html>

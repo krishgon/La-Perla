@@ -31,7 +31,7 @@ nav{
     z-index: 5;  
 }
 
-#hamburger{
+.hamburger{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,9 +40,17 @@ nav{
     color: white;
 }
 
-#hamburger img{
+.hamburger img{
     width: 1.5rem;
     margin-right: 0.5rem; 
+}
+
+nav input{
+    display: none;
+}
+
+#menu-toggle:checked ~ #navbar-list{
+    clip-path: circle(max(150vw , 150vh) at 0% 0%);
 }
 
 #navbar-list{
