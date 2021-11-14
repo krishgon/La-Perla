@@ -55,13 +55,14 @@
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 
 .cta-2 a{
     text-decoration: none;
     color: white;
-
 }
 
 .cta-2 img{

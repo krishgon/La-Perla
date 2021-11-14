@@ -49,10 +49,6 @@ nav input{
     display: none;
 }
 
-#menu-toggle:checked ~ #navbar-list{
-    clip-path: circle(max(150vw , 150vh) at 0% 0%);
-}
-
 #navbar-list{
     position: fixed;
     top: 0;
@@ -65,7 +61,7 @@ nav input{
     z-index: 1;
 }
 
-#navbar-list.open{
+#menu-toggle:checked ~ #navbar-list{
     clip-path: circle(max(150vw , 150vh) at 0% 0%);
 }
 
