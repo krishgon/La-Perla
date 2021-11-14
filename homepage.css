@@ -18,6 +18,7 @@
 }
 
 .home-subtitle{
+    font-size: max(3.125vw , 1.5em);
     font-family: 'Dancing Script', cursive;
 }
 
@@ -32,15 +33,16 @@
 }
 
 .home-subtitle::before{
-    right: 0.5em;
+    right: 1rem;
     margin-left: -20vw;
 }
 
 .home-subtitle::after{
-    left: 0.5em;
+    left: 1rem;
     margin-right: -20vw;
 }
 
 .home-title{
+    font-size: max(3.5vw , 2rem);
     font-family: 'Playfair Display', serif;
 }
