@@ -26,47 +26,22 @@ nav{
 }
 
 /*Hamburger*/
-.hamburger-icon{
+.hamburger{
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
 
-.hamburger-icon img{
+.hamburger img{
     width: max(2vw,2rem);
     padding-right: 0.25rem;
     cursor: pointer;
 }
 
-.main-navigation input{
-    display: none;
-}
-
-/*Making Navbar Functional*/
+/*Navlinks list*/
 .navbar-list{
-    position: fixed;
-    inset: 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    list-style-type: none;
-    font-size: max(1rem,2.5vh);
-    background-color: var(--gold);
-
-    clip-path: circle(0px at 0 0);
-    transition: all 4s linear;
-}
-
-#menu-toggle:checked ~ .navbar-list{
-    clip-path: circle(5000px at 0 0);
-}
-
-#menu-toggle:checked ~ .hamburger-cover{
-    display: block;
+    display: none;
 }
 
 /*Styling Navbar list items*/
