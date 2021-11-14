@@ -8,6 +8,8 @@
 }
 
 :root{
+    scroll-behavior: smooth;
+    
     /*Color Scheme and Root font size*/
     --white: #fff;
     --black: #000000;
@@ -35,6 +37,7 @@ nav{
     align-items: center;
     cursor: pointer;
     z-index: 99;
+    color: white;
 }
 
 #hamburger img{
@@ -95,7 +98,7 @@ nav{
     width: max(7.5vw , 5rem);
 }
 
-.cta1 button{
+.cta-1 button{
     font-size: 0.75rem;
     font-family: 'Roboto Slab', serif;
     padding: 0.5vh 2vw;
@@ -106,7 +109,7 @@ nav{
     transition: all 0.5s linear;
 }
 
-.cta1 button:hover{
+.cta-1 button:hover{
     background-color: white;
     color: black;
 }
@@ -117,12 +120,13 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0,0,0,0.1);
 }
 
 .section-title{
     font-family: 'Playfair Display';
     color: white;
-    font-size: 4.25rem;
+    font-size: max(5vw , 2.5rem);
 }
 
 .section-title::before,.section-title::after{
