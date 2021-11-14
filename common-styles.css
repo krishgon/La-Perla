@@ -50,7 +50,7 @@ nav{
     height: 100vh;
     background-color: var(--gold);
     clip-path: circle(0px at 0% 0%);
-    transition: all 2s linear;
+    transition: all 1s linear;
     z-index: 1;
 }
 
@@ -95,6 +95,22 @@ nav{
     width: max(7.5vw , 5rem);
 }
 
+.cta1 button{
+    font-size: 0.75rem;
+    font-family: 'Roboto Slab', serif;
+    padding: 0.5vh 2vw;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s linear;
+}
+
+.cta1 button:hover{
+    background-color: white;
+    color: black;
+}
+
 /*Baad me dekhna*/
 .landing-spot{
     height: 70vh;
@@ -116,15 +132,15 @@ nav{
     height: 1px;
     position: relative;
     vertical-align: middle;
-    width: 50%;
+    width: 20vw;
 }
 
 .section-title::before{
     right: 0.5em;
-    margin-left: -50%;
+    margin-left: -20vw;
 }
 
 .section-title::after{
     left: 0.5em;
-    margin-right: -50%;
+    margin-right: -20vw;
 }
