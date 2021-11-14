@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +8,81 @@
     <link rel="stylesheet" href="common-styles.css">
     <link rel="stylesheet" href="gallery.css">
 </head>
+
 <body>
 
+    <!--Common navbar implementation for all pages-->
+    <nav>
+        <div id="hamburger">
+            <img src="./assets/menu_white_36dp.svg" alt="hamburger-icon">
+            MENU
+        </div>
+        <div id="navbar-list">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contact-us.html">CONTACT US</a></li>
+                <li><a href="hotels.html">HOTELS</a></li>
+                <li><a href="rooms-and-ambience.html">ROOMS AND AMBIENCE</a></li>
+                <li><a href="initiatives.html">INIITIATIVES</a></li>
+                <li><a href="about-us.html">ABOUT US</a></li>
+                <li><a href="news.html">NEWS</a></li>
+            </ul>
+        </div>
+
+        <div class="logo"><a href="index.html"><img src="./assets/laLogo-white.png" alt="Company logo"></a></div>
+
+        <div class="cta1">
+            <button>CONTACT US</button>
+        </div>
+
+    </nav>
     <section class="landing-spot">
+
         <div class="section-title">Gallery</div>
-    </section> 
+    </section>
 
     <section class="main-gallery">
-        <div class="card" style="background-image: url('./Assets/gallery/gal1.jpeg');"></div>
-        <div class="card image-tall" style="background-image: url('./Assets/gallery/gal2.jpeg');"></div>
-        <div class="card image-tall" style="background-image: url('./Assets/gallery/gal3.jpeg');"></div>
-        <div class="card" style="background-image: url('./Assets/gallery/gal4.jpeg');"></div>
-        <div class="card image-wide image-tall" style="background-image: url('./Assets/gallery/gal5.jpeg');"></div>
-        <div class="card" style="background-image: url('./Assets/gallery/gal6.jpeg');"></div>
-        <div class="card" style="background-image: url('./Assets/gallery/gal7.jpeg');"></div>
+        <div class="card" style="background-image: url('./Assets/gallery/gal1.jpeg');">
+            <div class="info">
+                Evergreen cafe
+            </div>
+        </div>
+        <div class="card image-tall" style="background-image: url('./Assets/gallery/gal2.jpeg');">
+            <div class="info">Pearl gardens</div>
+        </div>
+        <div class="card image-tall" style="background-image: url('./Assets/gallery/gal3.jpeg');">
+            <div class="info">Royal Palms</div>
+        </div>
+        <div class="card" style="background-image: url('./Assets/gallery/gal4.jpeg');">
+            <div class="info">
+                Delonix regia
+            </div>
+        </div>
+        <div class="card image-wide image-tall" style="background-image: url('./Assets/gallery/gal5.jpeg');">
+            <div class="info">
+                Rajmahal place
+            </div>
+        </div>
+        <div class="card" style="background-image: url('./Assets/gallery/gal6.jpeg');">
+            <div class="info">
+                Flame lodge
+            </div>
+        </div>
+        <div class="card" style="background-image: url('./Assets/gallery/gal7.jpeg');">
+            <div class="info">Red insignia</div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="logo-container"><img src="./Assets/laLogo-white.png" alt="brand logo"></div>
+        <div class="details"><div class="contact-details">
+            Address: Oxford House, Apollo Bunder, Mumbai, India<br>
+            Phone: +91 22 6665- 1000<br>
+            Email: reservations@tajhotels.com
+        </div></div>
+        <div class="links">d</div>
     </section>
 </body>
+
 </html>
