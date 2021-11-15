@@ -13,10 +13,10 @@
 
     <!--Common navbar implementation for all pages-->
     <nav>
-        <div id="hamburger">
-            <img src="./assets/menu_white_36dp.svg" alt="hamburger-icon">
-            MENU
-        </div>
+    
+        <label for="menu-toggle" class="hamburger"><img src="./assets/menu_white_36dp.svg" alt="hamburger-icon">MENU</label>
+        <input type="checkbox" name="menu-toggle" id="menu-toggle"> 
+
         <div id="navbar-list">
             <ul>
                 <li><a href="index.html">HOME</a></li>
@@ -30,13 +30,15 @@
             </ul>
         </div>
 
-        <div class="logo"><a href="index.html"><img src="./assets/laLogo-white.png" alt="Company logo"></a></div>
+        <div class="logo"><a href="index.html"><img src="./assets/laLogo-white.png" alt="Company logo"></a></div>     
 
-        <div class="cta1">
+        <div class="cta-1">
             <button>CONTACT US</button>
         </div>
 
     </nav>
+
+
     <section class="landing-spot">
 
         <div class="section-title">Gallery</div>
