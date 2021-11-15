@@ -17,7 +17,6 @@
 
     background-size: cover;
     background-position: center;
-
     background-repeat: no-repeat;
 
     padding: 2vh 0px 4vh 1vw;
@@ -29,7 +28,7 @@
 
 .card::before {
     /* border-radius: 20px; */
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -72,8 +71,6 @@
     opacity: 1;
     transform: translateY(0px);
 }
-
-
 
 .main-gallery {
     margin: 8vh 3vw 8vh 3vw;

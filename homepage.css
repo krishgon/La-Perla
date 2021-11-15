@@ -71,6 +71,14 @@
     height: 4vh;
 }
 
+.cta-2:hover{
+    text-shadow: 0 0 1px white;
+}
+
+.cta-2:hover img{
+    filter: drop-shadow(0 0 1px white);
+}
+
 .story{
     height: 100vh;
 }
