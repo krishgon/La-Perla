@@ -58,6 +58,7 @@ nav input{
     background-color: var(--gold);
     clip-path: circle(0px at 0% 0%);
     transition: all 1s linear;
+    backdrop-filter: blur(10px);
     z-index: 1;
 }
 

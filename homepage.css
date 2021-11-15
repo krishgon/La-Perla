@@ -3,6 +3,7 @@
     background-image: url(./assets/home/lightTownSnow.jpg);
     background-size: cover;
     color: white;
+    backdrop-filter: blur(10px);
 }
 
 .hero-spot-text{
