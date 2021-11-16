@@ -3,6 +3,7 @@
     background-image: url(./assets/home/lightTownSnow.jpg);
     background-size: cover;
     color: white;
+    backdrop-filter: blur(10px);
 }
 
 .hero-spot-text{
@@ -68,6 +69,14 @@
 .cta-2 img{
     margin: 1vh 0;
     height: 4vh;
+}
+
+.cta-2:hover{
+    text-shadow: 0 0 1px white;
+}
+
+.cta-2:hover img{
+    filter: drop-shadow(0 0 1px white);
 }
 
 .story{

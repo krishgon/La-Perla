@@ -58,6 +58,7 @@ nav input{
     background-color: var(--gold);
     clip-path: circle(0px at 0% 0%);
     transition: all 1s linear;
+    backdrop-filter: blur(10px);
     z-index: 1;
 }
 
@@ -110,7 +111,7 @@ nav input{
     background-color: transparent;
     color: white;
     border: 1px solid white;
-    transition: all 0.5s linear;
+    transition: all 0.15s linear;
 }
 
 .cta-1 button:hover{
@@ -153,72 +154,86 @@ nav input{
     margin-right: -20vw;
 }
 
-
+/*Footer*/
 .footer {
-    height: 60vh;
     background-image:  linear-gradient(97.88deg, #0187BE 0.71%, #004585 100%);
-    padding: 10vh 10vw 10vh 3vw;
     color: white;
+    padding: 5vh 0;
+
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    position: relative;
 }
 
-.footer > .left-container {
+.footer-flex{
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-
 }
 
-.footer > .left-container > .details {
-    margin-left: 3vw;
+.footer-logo{
+    border-right: 1px solid white;
 }
 
-.logo-container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    border-right: 2px solid white;
+.footer-logo img{
+    width: max(20vw , 10rem);
 }
 
-.footer > .left-container > .logo-container > img{
-    width: 20rem;
+.footer-contact-details{
+    font-family: 'Roboto', serif;
+    font-weight: 300;
+    line-height: 1.375rem;
+    font-size: 1.0625rem;
 }
 
-.contact-details {
-    font-family: 'Playfair Display', serif;
-}
-
-.socials > a > img {
+.footer-social-links img{
     margin-top: 4vh;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(19deg) brightness(103%) contrast(101%);
-    width: 2vw;
+    width: 1.75rem;
 }
 
-.footer > .links {
+.footer-social-links img:hover{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(19deg) brightness(103%) contrast(101%) drop-shadow(0 0 1px white);
+}
+
+.footer-links{
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 3vw;
-    row-gap: 4vh;
+    row-gap: 3vh;
 }
 
-.footer > .links > a {
+.footer-links a{
     text-decoration: none;
     color: white;
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
-    font-size: 1.3rem;
+}
+
+.footer-links a:hover{
+    text-shadow: 0 0 5px white;
 }
 
 .copyright {
     font-family: 'Playfair Display', serif;
-    font-weight: lighter;
-    width: 95vw;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 20px;
+    padding: 4vh 0;
+}
+
+@media screen and (max-width: 1280px){
+    .footer-flex{
+        flex-direction: column;
+    }
+
+    .footer-logo{
+        border-right: none;
+        border-bottom: 1px solid white;
+    }
+
+    .footer-flex div{
+        padding: 2vh 0;
+        text-align: center;
+    }
+
 }
