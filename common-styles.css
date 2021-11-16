@@ -201,8 +201,8 @@ nav input{
 .footer-links{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 3vw;
-    row-gap: 3vh;
+    column-gap: 2vw;
+    row-gap: 2vh;
 }
 
 .footer-links a{
@@ -213,7 +213,7 @@ nav input{
 }
 
 .footer-links a:hover{
-    text-shadow: 0 0 5px white;
+    text-decoration: underline;
 }
 
 .copyright {
