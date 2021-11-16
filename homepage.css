@@ -1,3 +1,4 @@
+/*Hero Spot*/
 .hero-spot{
     height: 100vh;
     background-image: url(./assets/home/lightTownSnow.jpg);
@@ -6,6 +7,7 @@
     backdrop-filter: blur(10px);
 }
 
+/*Hero Spot Text*/
 .hero-spot-text{
     position: absolute;
     top: 50%;
@@ -48,6 +50,7 @@
     font-family: 'Playfair Display', serif;
 }
 
+/*Hero Spot CTA*/
 .cta-2{
     position: absolute;
     bottom: 8vh;
@@ -69,6 +72,16 @@
 .cta-2 img{
     margin: 1vh 0;
     height: 4vh;
+    animation: wave 1s linear infinite alternate;
+}
+
+@keyframes wave{
+    0%{
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 
 .cta-2:hover{
@@ -79,6 +92,7 @@
     filter: drop-shadow(0 0 1px white);
 }
 
+/*Story Sections*/
 .story{
     height: 100vh;
 }
@@ -94,7 +108,6 @@
 }
 
 .story-grid{
-    border: 1px solid black;
     width: 100%;
     height: 100%;
     display: grid;
@@ -103,14 +116,72 @@
 }
 
 .story-text{
-    grid-column: 6/14;
-    grid-row: 6/22;
+    grid-column: 5/13;
+    grid-row: 3/23;
     border: 1px solid black;
     background-color: white;
+    box-shadow: -20px 20px 4px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+    padding: 5vh 4vw 5vh 1vw;
+    letter-spacing: 1px;
+}
+
+#story-1-subheading{
+    font-family: 'Italianno', cursive;
+    font-size: 1.75rem;
+    letter-spacing: 1px;
+}
+
+#story-1-heading{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    margin: 2vh 0;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-left: 1vw;
+    border-left: 4px solid var(--gold);
+    letter-spacing: 2px;
+}
+
+.story-heading{
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    padding: 2vh 0;
+}
+
+.story-heading-line{
+    margin: 0 2vw;
+    width: 5vw;
+    height: 2px;
+    background-color: black;
+}
+
+.story-subtitle{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+}
+
+.story-subtitle p{
+    padding: 2vh 0;
+}
+
+.story-cta{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #144990;
 }
 
 .story-image{
-    grid-column: 12/22;
-    grid-row: 4/24;
+    grid-column: 12/21;
+    grid-row: 2/24;
     border: 1px solid black;
+    z-index: 1;
+    background-position: center;
+    background-size: cover;
 }

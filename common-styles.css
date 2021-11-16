@@ -119,7 +119,7 @@ nav input{
     color: black;
 }
 
-/*Baad me dekhna*/
+/*Landing Spots*/
 .landing-spot{
     height: 70vh;
     display: flex;
@@ -130,6 +130,7 @@ nav input{
 
 .section-title{
     font-family: 'Playfair Display';
+    font-weight: 100;
     color: white;
     font-size: max(5vw , 2.5rem);
 }
@@ -156,7 +157,7 @@ nav input{
 
 /*Footer*/
 .footer {
-    background-image:  linear-gradient(97.88deg, #0187BE 0.71%, #004585 100%);
+    background-image:  linear-gradient(90deg, #0187BE , #004585);
     color: white;
     padding: 5vh 0;
 
@@ -210,10 +211,11 @@ nav input{
     color: white;
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
+    color: rgba(255,255,255,0.9);
 }
 
 .footer-links a:hover{
-    text-decoration: underline;
+    color: rgb(255,255,255);
 }
 
 .copyright {
@@ -236,4 +238,15 @@ nav input{
         text-align: center;
     }
 
+}
+
+/*Common Styling*/
+::-moz-selection{ /* Code for Firefox */
+    color: white;
+    background: var(--gold);
+}
+  
+::selection{
+    color: white;
+    background: var(--gold);
 }
