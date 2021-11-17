@@ -1,0 +1,59 @@
+.landing-spot{
+    background-image: url('./Assets/AboutUs/LandingSpotBG.jpg');
+    background-position: center;  
+    background-size: cover;
+} 
+
+.brand-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh;
+}
+
+.brand-message div {
+    letter-spacing: 2px;
+    padding: 5px 3.5rem 5px 3.5rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.2rem;
+    border-top: 3px solid var(--gold);
+    border-bottom: 3px solid var(--gold);
+}
+
+.our-mission, .our-vision {
+    margin: 15vh 10vw 10vh 10vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.text-container {
+    padding-right: 5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.our-vision .text-container{
+    padding-right: 0;
+    padding-left: 5vw;
+}
+
+.text-container .title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 2.3rem;
+    padding-left: 1vw;
+    border-left: 4px solid var(--gold);
+    letter-spacing: 1px;    
+}
+
+.text-container .body {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.3rem;
+    padding-top: 3vh;
+    letter-spacing: 1px;
+}
+
+
+.image-container img{
+    width: 35vw;
+}
