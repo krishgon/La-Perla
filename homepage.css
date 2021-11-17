@@ -93,14 +93,10 @@
 }
 
 /*Story Sections*/
-.story{
-    height: 100vh;
-}
-
 /*Story Positioning*/
 .story-grid{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(24, 1fr);
     grid-template-rows: repeat(24, 1fr);
@@ -143,14 +139,19 @@
     .story-grid{
         display: flex;
         flex-direction: column;
+        height: fit-content;
+    }
+
+    .story-text{
+       text-align: center; 
+    }
+
+    .story-image{
+        height: 700px;
     }
 
     .ribbon{
         display: none;
-    }
-
-    .story-subtitle p{
-        padding: 10rem;
     }
 }
 
