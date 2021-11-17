@@ -42,13 +42,12 @@
 
 .left-container img{
     margin-top: 5vh;
-    width: 47vw;
+    width: 40vw;
 }
 
 .contact-form {
     display: flex;
     margin-top: 5vh;
-    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     width: 100%;
@@ -70,7 +69,12 @@
     border-bottom: 1px solid black;
 }
 
-
+.contact-form form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .contact-form input[type=text]:focus {
     outline: none;
@@ -90,10 +94,9 @@
     outline: none;
 }
 
-.submit-container {
-    width: 100%;
-}
-
-.contact-form input[type=submit] {
+.contact-form form input[type=submit] {
     padding: 5px 1rem 5px 1rem;
+    font-family: 'Roboto Slab';
+    background-color: white;
+    border: 1px solid black;
 }
