@@ -23,7 +23,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vh 10vw;
+    padding: 1vh 4vw;
     position: absolute;
     top: 0;
     width: 100%;    
@@ -210,7 +210,7 @@ nav input{
     color: white;
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
-    color: rgba(255,255,255,0.9);
+    color: rgba(255,255,255,0.8);
 }
 
 .footer-links a:hover{
@@ -218,8 +218,8 @@ nav input{
 }
 
 .copyright {
-    font-family: 'Playfair Display', serif;
     padding: 4vh 0;
+    font-family: 'Roboto', serif;
 }
 
 @media screen and (max-width: 1280px){
