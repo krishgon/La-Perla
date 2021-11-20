@@ -71,7 +71,7 @@
 
 .cta-2 img{
     margin: 1vh 0;
-    height: 4vh;
+    height: max(1.5rem , 4vh);
     animation: wave 1s linear infinite alternate;
 }
 
@@ -219,8 +219,6 @@
 }
 
 /*Adding Responsiveness*/
-
-
 @media screen and (max-width: 960px){
     .story-section{
         height: fit-content;
@@ -253,5 +251,9 @@
 
     .story-cta{
         justify-content: center;
+    }
+
+    .story-subtitle{
+        text-align: left;
     }
 }
