@@ -4,99 +4,116 @@
     background-size: cover;
 } 
 
-.interactive-map{
-    padding: 10vh 3vw 10vh 3vw;   
-}
-
-.heading {
-    color: black;
+.section-heading{
     font-family: 'Playfair Display', serif;
-    font-size: 2.3rem;
+    font-size: 2.25rem;
+    font-weight: 400;
     padding-left: 1vw;
     border-left: 4px solid var(--gold);
 }
 
-.interactive-map > iframe{
+/*Interactive Map Section*/
+.interactive-map-section, .contact-us-section{
+    padding: 2.5rem 4vw 1.25rem 4vw;   
+}
+
+.interactive-map-section iframe{
     margin-top: 5vh;
     width: 100%;
     height: 75vh;
 }
 
-.get-in-touch {
-    padding: 0vh 3vw 10vh 3vw;
+/*Contact-Us Section*/
+.contact-us-section{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-}
-
-.left-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.contact-details {
-    margin-top: 5vh;
-    font-family: 'Playfair Display', serif;
-}
-
-.left-container img{
-    margin-top: 5vh;
-    width: 40vw;
-}
-
-.contact-form {
-    display: flex;
-    margin-top: 5vh;
     align-items: center;
-    flex-direction: column;
-    width: 100%;
-    font-family: 'Mulish', sans-serif;
-    font-weight: 500; 
-    font-size: 1rem;  
 }
 
-.comment-box input[type=text]{
-    padding: 5vh 0px 1px 0px;
-}
-
-.contact-form input[type=text]{
-    font-family: 'Mulish', sans-serif;
-    font-weight: 200; 
-    font-size: 1.2rem;
-    padding: 10px 0px 1px 0px;
-    border: none;
-    border-bottom: 1px solid black;
-}
-
-.contact-form form{
-    height: 100%;
+.contact-details, .contact-form{
+    height: 90vh;
+    width: 40vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.contact-form input[type=text]:focus {
-    outline: none;
+/*Contact Details*/
+.contact-details-text{
+    padding: 4vh 0;
+    font-size: 1.0625rem;
 }
 
-.contact-form textarea {
+.contact-details-text p{
+    padding: 0.25vh 0;
+}
+
+.contact-details img{
+    height: 50vh;
+}
+
+/*Contact Form*/
+.contact-form{
+    padding: 0 5vw;
     font-family: 'Mulish', sans-serif;
-    font-weight: 200; 
-    font-size: 1rem;
-    padding: 10px 0px 1px 0px;
-    resize: none;
+    font-size: 1.0625rem;
+}
+
+.contact-form-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label{
+    padding-bottom: 2vh;
+}
+
+.contact-form input, .contact-form textarea{
+    width: 20vw;
     border: none;
-    border-bottom: 1px solid black;
-}
-
-.contact-form textarea:focus {
     outline: none;
+    border-bottom: 1px solid black;
+    resize: none;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.0625rem;
 }
 
-.contact-form form input[type=submit] {
-    padding: 5px 1rem 5px 1rem;
-    font-family: 'Roboto Slab';
+/*Submit Button*/
+.contact-form input[type=submit]{
+    padding: 0.5vh 4vw;
+    border: 2px solid black;
     background-color: white;
-    border: 1px solid black;
+    cursor: pointer;
+    transition: all 0.15s linear;
+}
+
+.contact-form input[type=submit]:hover{
+    background-color: black;
+    color: white;
+}
+
+/*Adding responsiveness*/
+@media screen and (max-width : 700px){
+    .contact-us-section{
+        flex-direction: column;
+    }
+
+    .contact-details, .contact-form{
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 1.25rem;
+    }
+
+    .contact-form-input{
+        padding: 1.5rem 0;
+        margin: auto;
+    }
+
+    .contact-form input, .contact-form textarea{
+        width: 60vw;
+    }
+
+    .contact-form input[type=submit]{
+        margin: auto;
+    }
 }
