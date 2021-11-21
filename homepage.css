@@ -13,11 +13,21 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    animation: glow 5s linear infinite;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@keyframes glow{
+    0%{
+        text-shadow: none;
+    }
+    50%{
+        text-shadow: 0 0 1rem white;
+    }
 }
 
 .home-subtitle{
@@ -33,6 +43,7 @@
     position: relative;
     vertical-align: middle;
     width: 20vw;
+    box-shadow: 0 0 1rem white;
 }
 
 .home-subtitle::before{
