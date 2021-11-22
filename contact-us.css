@@ -50,8 +50,17 @@
     padding: 0.25vh 0;
 }
 
+.contact-details-img{
+    overflow: hidden;
+}
+
 .contact-details img{
     max-width: 40vw;
+    transition: all 0.25s linear;
+}
+
+.contact-details-img:hover img{
+    transform: scale(1.2);
 }
 
 /*Contact Form*/
