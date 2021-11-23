@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--Note for self: Remember to add comments and meta descriptions to each page.-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,38 +14,35 @@
 
 <body>
 
+    <!--Common navbar implementation for all pages-->
+    <nav>
+
+        <label for="menu-toggle" class="hamburger"><img src="./assets/menu_white_36dp.svg" alt="hamburger-icon">MENU</label>
+        <input type="checkbox" name="menu-toggle" id="menu-toggle">
+
+        <div id="navbar-list">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contact-us.html">CONTACT US</a></li>
+                <li><a href="hotels.html">HOTELS</a></li>
+                <li><a href="rooms-and-ambience.html">ROOMS AND AMBIENCE</a></li>
+                <li><a href="initiatives.html">INIITIATIVES</a></li>
+                <li><a href="about-us.html">ABOUT US</a></li>
+                <li><a href="news.html">NEWS</a></li>
+            </ul>
+        </div>
+
+        <div class="logo"><a href="index.html"><img src="./assets/laLogo-white.png" alt="Company logo"></a></div>
+
+        <div class="cta-1">
+            <button>CONTACT US</button>
+        </div>
+
+    </nav>
+
+    <!--Hero Spot-->
     <section class="hero-spot">
-
-        <!--Common navbar implementation for all pages-->
-        <nav>
-
-            <label for="menu-toggle" class="hamburger"><img src="./assets/menu_white_36dp.svg"
-                    alt="hamburger-icon">MENU</label>
-            <input type="checkbox" name="menu-toggle" id="menu-toggle">
-
-            <div id="navbar-list">
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="gallery.html">GALLERY</a></li>
-                    <li><a href="contact-us.html">CONTACT US</a></li>
-                    <li><a href="hotels.html">HOTELS</a></li>
-                    <li><a href="rooms-and-ambience.html">ROOMS AND AMBIENCE</a></li>
-                    <li><a href="initiatives.html">INIITIATIVES</a></li>
-                    <li><a href="about-us.html">ABOUT US</a></li>
-                    <li><a href="news.html">NEWS</a></li>
-                </ul>
-            </div>
-
-            <div class="logo"><a href="index.html"><img src="./assets/laLogo-white.png" alt="Company logo"></a></div>
-
-            <div class="cta-1">
-                <button>CONTACT US</button>
-            </div>
-
-        </nav>
-
-
-        <!--Hero Spot-->
         <div class="hero-spot-text">
             <div class="home-subtitle">The</div>
             <div class="home-title">Luxury of Taj</div>
@@ -57,7 +55,8 @@
         </div>
     </section>
 
-    <section class="story" id="story-section-1">
+    <!--Story Sections-->
+    <section class="story-section" id="story-section-1">
         <div class="story-grid">
             <div class="story-text">
 
@@ -88,11 +87,13 @@
                 </div>
 
                 <div class="story-cta">
-                    <a href="about-us.html"><img src="./assets/home/chevron_right_black_24dp.svg" alt="east arrow icon"> Explore Further </a>
+                    <img src="./assets/home/chevron_right_black_24dp.svg" alt="east arrow icon"> 
+                    <a href="about-us.html">Explore Further</a>
                 </div>
             </div>
+
             <div class="story-image" style="background-image: url(./assets/home/NightPool.jpeg);">
-                <div class="story-image-text">Windflower Hall</div>
+            <div class="story-image-text">Windflower Hall</div>
             </div>
         </div>
 
@@ -100,7 +101,7 @@
     </section>
 
 
-    <section class="story" id="story-section-2" style="background-color: #F5F5F5;">
+    <section class="story-section" id="story-section-2" style="background-color: #F5F5F5;">
         <div class="story-grid">
             <div class="story-text">
 
@@ -127,16 +128,19 @@
                 </div>
 
                 <div class="story-cta">
-                    <a href="about-us.html"><img src="./assets/home/chevron_right_black_24dp.svg" alt="east arrow icon"> Explore Further </a>
+                   <img src="./assets/home/chevron_right_black_24dp.svg" alt="east arrow icon">
+                   <a href="hotels.html">Explore Further</a>
                 </div>
             </div>
-            <div class="story-image" style="background-image: url(./assets/home/poolBG.jpg);"></div>
+            <div class="story-image" style="background-image: url(./assets/home/poolBG.jpg);">
+                <div class="story-image-text">Blue Moon Resort</div>
+            </div>
         </div>
 
         <div class="ribbon"></div>
     </section>
 
-    <section class="story" id="story-section-3">
+    <section class="story-section" id="story-section-3">
         <div class="story-grid">
             <div class="story-text">
 
@@ -165,10 +169,14 @@
                 </div>
 
                 <div class="story-cta">
-                    <a href="about-us.html"><img src="./assets/home/chevron_right_black_24dp.svg" alt="east arrow icon"> Explore Further </a>
+                    <img src="./assets/home/chevron_right_black_24dp.svg" alt="east arrow icon"> 
+                    <a href="rooms-and-ambience.html">Explore Further</a>
                 </div>
+        
             </div>
-            <div class="story-image" style="background-image: url(./assets/home/restaurentLuxury.jpeg);"></div>
+            <div class="story-image" style="background-image: url(./assets/home/restaurentLuxury.jpeg);">
+                <div class="story-image-text">Rosewood Tavern</div>
+            </div>
         </div>
 
         <div class="ribbon"></div>

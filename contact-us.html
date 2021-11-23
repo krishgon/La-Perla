@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Perla | Gallery</title>
+    <title>La Perla | Contact Us</title>
     <link rel="stylesheet" href="common-styles.css">
     <link rel="stylesheet" href="contact-us.css">
     <link rel="icon" href="./Assets/laLogo-white.png">
@@ -40,42 +40,62 @@
 
     </nav>
 
-
+    <!--Landing Spot-->
     <section class="landing-spot">
-        <div class="section-title">Contact Us</div>
+        <h1 class="section-title">Contact Us</h1>
     </section>
 
-    <section class="interactive-map">
-        <div class="heading">Find us here</div>
-        <iframe src="https://www.google.co.in/maps/d/u/0/embed?mid=1y1iS3F4x4h8udoHqb2ZfoTmITPna1FCE" width="640"
-            height="480" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <!--Interactive Map-->
+    <section class="interactive-map-section">
+        <h2 class="section-heading">Find us here</h2>
+
+        <iframe title="google map showing different hotel branches around the world" 
+        src="https://www.google.co.in/maps/d/u/0/embed?mid=1y1iS3F4x4h8udoHqb2ZfoTmITPna1FCE" 
+        frameborder="0" style="border:0" allowfullscreen></iframe>
     </section>
 
-    <section class="get-in-touch">
-        <div class="left-container">
-            <div class="heading">Get in Touch</div>
-            <div class="contact-details">Address: Oxford House, Apollo Bunder, Mumbai, India<br>
-                Phone: +91 22 6665- 1000<br>
-                Email: reservations@tajhotels.com<br>
-                Opening/Clopsing Hours: 9:00a.m to 5:00 p.m
+    <!--Form and Details-->
+    <section class="contact-us-section">
+
+        <div class="contact-details">
+            <h2 class="section-heading">Get in Touch</h2>
+
+            <div class="contact-details-text">
+                <p>Address: Oxford House, Apollo Bunder, Mumbai, India</p>
+                <p>Phone: +91 22 6665- 1000</p>
+                <p>Email: reservations@tajhotels.com</p>
+                <p>Opening/Clopsing Hours: 9:00a.m to 5:00 p.m</p>
             </div>
-            <img src="./Assets/contact-us/hotelLobbyView.jpeg" alt="hotel lobby view">
+
+            <div class="contact-details-img"><img src="./Assets/contact-us/hotelLobbyView.jpeg" alt="hotel lobby view"></div>
         </div>
-        <div class="contact-form">
-            <form action="/action_page.php">
-                <div class="fillIns">
-                    <label for="name">Full name*</label><br>
-                    <input type="text"><br><br><br>
-                    <label for="phone">Phone*</label><br>
-                    <input type="text"><br><br><br>
-                    <label for="Email">Email*</label><br>
-                    <input type="text"><br><br><br>
-                    <label for="comments">Your Comments*</label><br>
-                    <textarea rows="4" cols="24"></textarea>
-                </div>
-                <input type="submit" value="Send">
-            </form>
-        </div>
+
+        <form class="contact-form">
+            
+            <div class="contact-form-input">
+                <label for="f-name">Full Name:</label>
+                <input type="text" name="name" id="f-name" aria-required="true">
+            </div>
+                
+            <div class="contact-form-input">
+                <label for="f-phone">Phone:</label>
+                <input type="number" name="phone" id="f-phone" aria-required="true">
+            </div>
+
+            <div class="contact-form-input">
+                <label for="f-mail">Email:</label>
+                <input type="email" name="email" id="f-mail" aria-required="true">
+            </div>
+
+            <div class="contact-form-input">
+                <label for="f-comments">Your Comments:</label>
+                <textarea name="comments" id="f-comments" cols="30" rows="5" aria-required="true"></textarea>
+            </div>
+            
+            <input type="submit" value="Send">
+
+        </form>
+
     </section>
 
     <!--Common footer implementation for all pages-->
@@ -93,13 +113,13 @@
                 </div>
 
                 <div class="footer-social-links">
-                    <a href="https://www.facebook.com/TajHotels/" target="_blank"><img
+                    <a href="https://www.facebook.com/TajHotels/" target="_blank" rel="noopener"><img
                             src="./assets/social-icons/icons8-facebook.svg" alt="facebook icon"
                             class="filter-white"></a>
-                    <a href="https://www.instagram.com/tajhotels/?hl=en" target="_blank"><img
+                    <a href="https://www.instagram.com/tajhotels/?hl=en" target="_blank" rel="noopener"><img
                             src="./assets/social-icons/icons8-instagram.svg" alt="instagram icon"
                             class="filter-white"></a>
-                    <a href="https://in.pinterest.com/tajhotels/_created/" target="_blank"><img
+                    <a href="https://in.pinterest.com/tajhotels/_created/" target="_blank" rel="noopener"><img
                             src="./assets/social-icons/icons8-pinterest.svg" alt="pinterest icon"
                             class="filter-white"></a>
                 </div>

@@ -1,105 +1,153 @@
-.landing-spot {
+.landing-spot{
     background-image: url('./Assets/AboutUs/LandingSpotBG.jpg');
     background-position: center;
     background-size: cover;
 }
 
-.brand-message {
+/*Brand Message*/
+.brand-message{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10vh;
+    margin: 10vh 0;
 }
 
-.brand-message div {
-    letter-spacing: 2px;
-    padding: 5px 3.5rem 5px 3.5rem;
+.brand-message h1{
     font-family: 'Dancing Script', cursive;
-    font-size: 3.2rem;
+    font-size: 3.25rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+
+    padding: 0.3125rem 3.5rem;
     border-top: 3px solid var(--gold);
     border-bottom: 3px solid var(--gold);
 }
 
-.our-mission, .our-vision {
-    margin: 15vh 10vw 10vh 10vw;
-    display: flex;
-    flex-direction: row;
-}
-
-.text-container {
-    padding-right: 5vw;
+/*Brand Values Section*/
+.brand-value-section{
     display: flex;
     flex-direction: column;
 }
 
-.our-vision .text-container {
-    padding-right: 0;
-    padding-left: 5vw;
+#mission-section, #vision-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5vh 0;
 }
 
-.text-container .title {
+/*Brand Value Section Typography*/
+.brand-value-text{
+    display: flex;
+    flex-direction: column;
+    max-width: 40vw;
+    letter-spacing: 1px;
+}
+
+.brand-value-title{
     font-family: 'Playfair Display', serif;
     font-weight: 400;
-    font-size: 2.3rem;
+    font-size: 2.25rem;
     padding-left: 1vw;
     border-left: 4px solid var(--gold);
-    letter-spacing: 1px;
 }
 
-.text-container .body {
+.brand-value-body{
     font-family: 'Dosis', sans-serif;
-    font-size: 1.3rem;
-    padding-top: 3vh;
-    letter-spacing: 1px;
+    font-size: 1.25rem;
+    padding-top: 1.25rem;
 }
 
-.image-container img {
-    width: 35vw;
+/*Brand Value Section Image*/
+.brand-value-image{
+    overflow: hidden;
 }
 
-.directors {
-    margin: 15vh 10vw 10vh 10vw;
+.brand-value-image img{
+    width: 40vw;
+    transition: all 0.5s ease-in-out;
+}
+
+.brand-value-image:hover img{
+    transform: scale(1.5);
+}
+
+/*Board of Directors Section*/
+.board-of-directors-section{
+    margin: 10vh 5vw;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.directors .title {
+.board-of-directors-title{
     width: fit-content;
     font-family: 'Playfair Display', serif;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
+    font-weight: 400;
     letter-spacing: 1px;
-    border-bottom: 4px solid var(--gold);
+    border-bottom: 3px solid var(--gold);
+    margin-bottom: 3rem;
 }
 
-.directors-container {
+.board-of-directors-grid{
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
+    column-gap: 10vw;
+    row-gap: 5vh;
+    align-items: center;
 }
 
-.director{
-    margin-top: 8vh;
+/*Styling Grid Cells*/
+.director-cell{
+    margin: auto;
+    border: 1px solid transparent;
+    padding: 1rem;
 }
 
-.director img {
-    width: 20rem;
+.director-cell img{
+    width: min(300px , 80vw);
 }
 
-.director .name {
-    padding-top: 1vh;
+.director-name{
+    padding-top: 0.5rem;
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
     letter-spacing: 0.5px;
 }
 
-.director .post {
+.director-post{
     font-family: 'Dosis', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     color: var(--grey);
     letter-spacing: 1px;
-    max-width: 20vw;
+    max-width: min(250px , 80vw);
+}
+
+/*Adding Responsiveness*/
+@media screen and (max-width : 800px){
+    .brand-message h1{
+        font-size: 1.8rem;
+    }
+
+    #mission-section{
+        flex-direction: column;
+    }
+
+    #vision-section{
+        flex-direction: column-reverse;
+    }
+
+    .brand-value-text{
+        max-width: 80vw;
+    }
+
+    .brand-value-image{
+        margin: 2rem 0;
+    }
+
+    .brand-value-image img{
+        width: 80vw;
+    }
 }

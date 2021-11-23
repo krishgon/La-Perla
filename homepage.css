@@ -13,7 +13,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-
+    text-shadow: 0 0 0.25rem black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,7 +71,7 @@
 
 .cta-2 img{
     margin: 1vh 0;
-    height: 4vh;
+    height: max(1.5rem , 4vh);
     animation: wave 1s linear infinite alternate;
 }
 
@@ -85,18 +85,21 @@
 }
 
 .cta-2:hover{
-    text-shadow: 0 0 2px white;
+    text-shadow: 0 0 10px white;
 }
 
 .cta-2:hover img{
-    filter: drop-shadow(0 0 2px white);
+    filter: drop-shadow(0 0 10px white);
 }
 
 /*Story Sections*/
+.story-section{
+    height: 100vh;
+}
 /*Story Positioning*/
 .story-grid{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(24, 1fr);
     grid-template-rows: repeat(24, 1fr);
@@ -117,42 +120,59 @@
     justify-content: space-between;
 }
 
+#story-section-2 .story-text{
+    grid-column: 13/21;
+    box-shadow: 20px 20px 4px rgba(0, 0, 0, 0.25);
+}
+
 .story-image{
     grid-column: 12/21;
     grid-row: 2/24;
     border: 1px solid black;
     z-index: 1;
     background-position: center;
-    background-size: cover;
-}
-
-#story-section-2 .story-text{
-    grid-column: 13/21;
-    box-shadow: 20px 20px 4px rgba(0, 0, 0, 0.25);
+    background-size: 100%;
+    overflow: hidden;
+    transition: all 0.25s linear;
 }
 
 #story-section-2 .story-image{
     grid-column: 5/14;
 }
 
-@media screen and (max-width: 960px){
-    .story-grid{
-        display: flex;
-        flex-direction: column;
-        height: fit-content;
-    }
+.story-image:hover{
+    background-size: 120%;
+}
 
-    .story-text{
-       text-align: center; 
-    }
+.story-image-text{
+    color: white;
+    opacity: 0.5;
+    font-size: max(3.5vw , 2rem);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    text-shadow: 0 0 0.25rem black;
+    position: relative;
+    right: -100%;
+    transform: translateX(-100%);
+    animation: drop-text 30s linear infinite;
+}
 
-    .story-image{
-        height: 700px;
-    }
+#story-section-2 .story-image-text{
+    right: 0%;
+    transform: translateX(0);
+}
 
-    .ribbon{
-        display: none;
+@keyframes drop-text{
+    0%{
+        top: -60%;
     }
+    100%{
+        top: 100%;
+    }
+}
+
+.story-image:hover .story-image-text{
+    animation-play-state: paused;
 }
 
 .ribbon{
@@ -178,11 +198,12 @@
 #story-1-heading{
     font-family: 'Playfair Display', serif;
     font-weight: 400;
-    margin: 2vh 0;
+    margin: 1.5rem 0;
     font-size: 1.5rem;
     line-height: 2rem;
-    padding-left: 1vw;
+    padding-left: 1rem;
     border-left: 4px solid var(--gold);
+    width: fit-content;
     letter-spacing: 2px;
 }
 
@@ -194,7 +215,7 @@
     font-family: 'Dosis', sans-serif;
     font-weight: 400;
     font-size: 1.125rem;
-    padding: 4vh 0;
+    padding: 0.5rem 0;
 }
 
 .story-heading-line{
@@ -210,24 +231,70 @@
 }
 
 .story-subtitle p{
-    padding: 1vh 0;
+    padding: 1rem 0;
 }
 
 /*Story CTA*/
-.story-cta a{
+.story-cta{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    transition: all 0.2s linear;
+}
+
+.story-cta a{
     text-decoration: none;
     color: #144990;
 }
 
-.story-cta a img{
-    transition: all 0.25s linear;
+.story-cta img{
     filter: invert(22%) sepia(52%) saturate(1838%) hue-rotate(192deg) brightness(98%) contrast(96%);
 }
 
-.story-cta:hover img{
+.story-cta:hover{
     margin-left: 0.5rem;   
 }
 
+/*Adding Responsiveness*/
+@media screen and (max-width: 995px), screen and (max-height: 700px){
+    .story-section{
+        height: fit-content;
+    }
+
+    .ribbon{
+        display: none;
+    }
+
+    .story-grid{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .story-text{
+       text-align: center; 
+       padding: 1.5rem;
+    }
+
+    .story-image{
+        height: 75vh;
+    }
+
+    #story-1-heading, .story-heading{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .story-cta{
+        justify-content: center;
+    }
+
+    .story-subtitle{
+        text-align: left;
+    }
+
+    .story-image-text{
+        display: none;
+    }
+}

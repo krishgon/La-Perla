@@ -18,12 +18,16 @@
     --grey: #595959;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 /*Navbar Styling*/
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vh 10vw;
+    padding: 1vh 4vw;
     position: absolute;
     top: 0;
     width: 100%;    
@@ -35,7 +39,7 @@ nav{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    z-index: 99;
+    z-index: 9999;
     color: white;
 }
 
@@ -50,15 +54,11 @@ nav input{
 
 #navbar-list{
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
+    inset: 0;
     background-color: var(--gold);
     clip-path: circle(0px at 0% 0%);
     transition: all 1s linear;
-    backdrop-filter: blur(10px);
-    z-index: 1;
+    z-index: 999;
 }
 
 #menu-toggle:checked ~ #navbar-list{
@@ -131,7 +131,7 @@ nav input{
     font-family: 'Playfair Display';
     font-weight: 100;
     color: white;
-    font-size: max(5vw , 2.5rem);
+    font-size: max(5vw , 2.25rem);
 }
 
 .section-title::before,.section-title::after{
@@ -141,17 +141,17 @@ nav input{
     height: 1px;
     position: relative;
     vertical-align: middle;
-    width: 20vw;
+    width: 10vw;
 }
 
 .section-title::before{
     right: 0.5em;
-    margin-left: -20vw;
+    margin-left: -10vw;
 }
 
 .section-title::after{
     left: 0.5em;
-    margin-right: -20vw;
+    margin-right: -10vw;
 }
 
 /*Footer*/
@@ -210,7 +210,7 @@ nav input{
     color: white;
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
-    color: rgba(255,255,255,0.9);
+    color: rgba(255,255,255,0.8);
 }
 
 .footer-links a:hover{
@@ -218,8 +218,8 @@ nav input{
 }
 
 .copyright {
-    font-family: 'Playfair Display', serif;
-    padding: 4vh 0;
+    padding: 2rem 0;
+    font-family: 'Roboto', serif;
 }
 
 @media screen and (max-width: 1280px){
