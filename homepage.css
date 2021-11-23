@@ -1,10 +1,13 @@
+html{
+    scroll-snap-type: y proximity;
+}
+
 /*Hero Spot*/
 .hero-spot{
     height: 100vh;
     background-image: url(./assets/home/lightTownSnow.jpg);
     background-size: cover;
     color: white;
-    backdrop-filter: blur(10px);
 }
 
 /*Hero Spot Text*/
@@ -18,6 +21,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    user-select: none;
+    transition: all 0.25s linear;
+}
+
+.hero-spot-text:hover{
+    text-shadow: 0 0 0.25rem white;
 }
 
 .home-subtitle{
@@ -94,8 +103,10 @@
 
 /*Story Sections*/
 .story-section{
-    height: 100vh;
+    height: 750px;
+    scroll-snap-align: start;
 }
+
 /*Story Positioning*/
 .story-grid{
     width: 100%;
@@ -131,17 +142,13 @@
     border: 1px solid black;
     z-index: 1;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     overflow: hidden;
     transition: all 0.25s linear;
 }
 
 #story-section-2 .story-image{
     grid-column: 5/14;
-}
-
-.story-image:hover{
-    background-size: 120%;
 }
 
 .story-image-text{
@@ -152,23 +159,14 @@
     text-orientation: mixed;
     text-shadow: 0 0 0.25rem black;
     position: relative;
+    top: 50%;
     right: -100%;
-    transform: translateX(-100%);
-    animation: drop-text 30s linear infinite;
+    transform: translateX(-100%) translateY(-50%);
 }
 
 #story-section-2 .story-image-text{
     right: 0%;
-    transform: translateX(0);
-}
-
-@keyframes drop-text{
-    0%{
-        top: -60%;
-    }
-    100%{
-        top: 100%;
-    }
+    transform: translateX(0) translateY(-50%);
 }
 
 .story-image:hover .story-image-text{
@@ -256,7 +254,7 @@
 }
 
 /*Adding Responsiveness*/
-@media screen and (max-width: 995px), screen and (max-height: 700px){
+@media screen and (max-width: 995px){
     .story-section{
         height: fit-content;
     }
