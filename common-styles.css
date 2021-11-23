@@ -18,6 +18,10 @@
     --grey: #595959;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 /*Navbar Styling*/
 nav{
     display: flex;
@@ -127,7 +131,7 @@ nav input{
     font-family: 'Playfair Display';
     font-weight: 100;
     color: white;
-    font-size: max(5vw , 2.5rem);
+    font-size: max(5vw , 2.25rem);
 }
 
 .section-title::before,.section-title::after{
@@ -137,17 +141,17 @@ nav input{
     height: 1px;
     position: relative;
     vertical-align: middle;
-    width: 20vw;
+    width: 10vw;
 }
 
 .section-title::before{
     right: 0.5em;
-    margin-left: -20vw;
+    margin-left: -10vw;
 }
 
 .section-title::after{
     left: 0.5em;
-    margin-right: -20vw;
+    margin-right: -10vw;
 }
 
 /*Footer*/
