@@ -1,0 +1,81 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.landing-spot{
+    background-image: url('./Assets/hotels/landingSpotBG.jpg');
+    background-position: center;  
+    background-size: cover;
+} 
+
+.hotel-list{
+    margin: 10vh 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hotel-list > .title{
+    width: fit-content;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-bottom: 3px solid var(--gold);
+    margin-bottom: 3rem;
+}
+
+.hotels-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 4vw;
+    width: 100%;
+}
+
+.hotel-card{
+    background-color: white;
+    box-shadow: 15px 15px 15px -4px rgba(0, 0, 0, 0.3);
+
+}
+
+.hotel-image{
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.hotel-image > .image-captions{
+    color: white;
+    letter-spacing: 1px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem 0 1rem 1rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7)
+}
+
+.hotel-details{
+    display: flex;
+    flex-direction: row;
+    padding: 3rem 2rem;
+}
+
+.hotel-details > .country{
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    border-right: 4px solid var(--gold);
+    letter-spacing: 1px;
+    padding-right: 1.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hotel-details > .description{
+    font-family: 'Dosis', sans-serif;
+    padding-left: 1.5rem;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
