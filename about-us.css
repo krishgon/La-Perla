@@ -75,9 +75,6 @@
 /*Board of Directors Section*/
 .board-of-directors-section{
     margin: 10vh 5vw;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 }
 
 .board-of-directors-title{
@@ -87,13 +84,14 @@
     font-weight: 400;
     letter-spacing: 1px;
     border-bottom: 3px solid var(--gold);
+    margin: 0 auto;
     margin-bottom: 3rem;
 }
 
 .board-of-directors-grid{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px , 1fr));
     column-gap: 10vw;
     row-gap: 5vh;
     align-items: center;
@@ -102,8 +100,6 @@
 /*Styling Grid Cells*/
 .director-cell{
     margin: auto;
-    border: 1px solid transparent;
-    padding: 1rem;
 }
 
 .director-cell img{

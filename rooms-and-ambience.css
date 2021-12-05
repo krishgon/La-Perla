@@ -3,3 +3,30 @@
     background-position: center;  
     background-size: cover;
 } 
+
+/*Carousel Section*/
+.carousel-section-title{
+    width: fit-content;
+    margin: 2rem auto;
+    font-size: 2.25rem;
+    font-weight: 500;
+    border-bottom: 4px solid var(--gold);
+}
+
+.carousel-container{
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+
+    scroll-snap-type: x mandatory;
+    
+    scroll-behavior: smooth;
+}
+
+.carousel-cell{
+    scroll-snap-align: start;
+    width: 80vw;
+    min-height: 100px;
+    margin: 5vh auto;
+    background: pink;
+}
