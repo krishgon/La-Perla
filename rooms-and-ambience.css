@@ -15,18 +15,13 @@
 
 .carousel-container{
     display: flex;
-    flex-direction: column;
-    overflow-x: auto;
-
-    scroll-snap-type: x mandatory;
-    
-    scroll-behavior: smooth;
+    justify-content: space-between;
+    width: 300vw;
+    height: 500px;
+    margin: 2rem 10vw;
 }
 
 .carousel-cell{
-    scroll-snap-align: start;
     width: 80vw;
-    min-height: 100px;
-    margin: 5vh auto;
-    background: pink;
+    height: 100%;
 }
