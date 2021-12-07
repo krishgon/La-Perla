@@ -3,3 +3,43 @@
     background-position: center;
     background-size: cover;
 }
+
+.covid19{
+    margin: 10vh 4vw;
+}
+
+
+.covid19 > .title{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    padding-left: 1rem;
+    letter-spacing: 1px;
+    border-left: 4px solid var(--gold);
+}
+
+.measures-container{
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax( min(300px, 60vw), 1fr));;
+    column-gap: 10vw;
+    row-gap: 10vh;
+}
+
+.measure{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.measure-text{
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 0.3rem;
+}
+
+.measure img{
+    width: 40%;
+}
