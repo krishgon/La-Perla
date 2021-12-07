@@ -18,7 +18,7 @@
     border-left: 4px solid var(--gold);
 }
 
-.measure-text, .social-work .socialWork-container .text li, .program-details {
+.measure-text, .social-work .socialWork-container .text p, .program-details {
     font-size: 1.25rem;
     letter-spacing: 1px;
     font-family: 'Dosis', sans-serif;
@@ -57,7 +57,6 @@
     margin-top: 10vh;
     justify-content: space-evenly;
     align-items: center;
-    background: linear-gradient(90deg, rgba(245, 245, 245, 1) 75%, rgba(255, 255, 255, 1) 75%);
 }
 
 .socialWork-container>.text {
@@ -69,12 +68,8 @@
     width: 35vw;
 }
 
-.socialWork-container .text li {
+.socialWork-container .text p {
     margin-bottom: 2rem;
-}
-
-#container2 {
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 25%, rgba(245, 245, 245, 1) 25%);
 }
 
 #text2 {
@@ -128,14 +123,12 @@
 
 
 @media screen and (max-width: 888px) {
-    .socialWork-container, #container2 {
+    .socialWork-container{
         flex-direction: column;
-        background: #f5f5f5;
     }
 
     .socialWork-container>.text {
         width: 100%;
-        padding: 1rem 1rem;
     }
 
     .socialWork-container img {
