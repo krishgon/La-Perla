@@ -1,15 +1,15 @@
-.landing-spot{
+.landing-spot {
     background-image: url('./Assets/initiatives/landingSpotBG.jpg');
     background-position: center;
     background-size: cover;
 }
 
-.covid19{
+.covid19 {
     margin: 10vh 4vw;
 }
 
 
-.title{
+.title {
     font-family: 'Playfair Display', serif;
     font-weight: 400;
     font-size: 2.5rem;
@@ -18,82 +18,149 @@
     border-left: 4px solid var(--gold);
 }
 
-.measures-container{
+.measure-text, .social-work .socialWork-container .text p, .program-details {
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.measures-container {
     margin-top: 5vh;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax( min(300px, 60vw), 1fr));;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 60vw), 1fr));
     column-gap: 10vw;
     row-gap: 10vh;
 }
 
-.measure{
+.measure {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.measure-text{
-    font-family: 'Dosis', sans-serif;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
+.measure-text {
     text-align: center;
     margin-top: 0.3rem;
 }
 
-.measure img{
+.measure img {
     width: 40%;
 }
 
-.social-work{
+.social-work {
     margin: 10vh 4vw;
 }
 
-.socialWork-container{
+.socialWork-container {
     display: flex;
     flex-direction: row;
     margin-top: 10vh;
     justify-content: space-evenly;
     align-items: center;
+    background: linear-gradient(90deg, rgba(245, 245, 245, 1) 75%, rgba(255, 255, 255, 1) 75%);
 }
 
-.socialWork-container > .text{
-    font-family: 'Dosis', sans-serif;
-    font-size: 1.5rem;
+.socialWork-container>.text {
     width: 30vw;
-    letter-spacing: 1px;
+    padding: 1rem 0;
 }
 
-.socialWork-container img{
-    width: 30vw;
+.socialWork-container img {
+    width: 35vw;
 }
 
-.socialWork-container .text p{
+.socialWork-container .text p {
     margin-bottom: 1rem;
 }
 
-#text2{
+#container2 {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 25%, rgba(245, 245, 245, 1) 25%);
+}
+
+#text2 {
     order: 1;
 }
-#image2{
+
+#image2 {
     order: 0;
 }
 
-@media screen and (max-width: 888px){
-    .socialWork-container{
+.membership {
+    margin: 10vh 4vw;
+}
+
+.programs-container {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.program {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+
+.program img {
+    width: 80%;
+}
+
+.program-name {
+    margin-top: 5vh;
+    width: fit-content;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-bottom: 3px solid var(--gold);
+
+}
+
+.program-details {
+    margin-top: 5vh;
+    width: 30vw;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 888px) {
+    .socialWork-container, #container2 {
         flex-direction: column;
+        background: #f5f5f5;
     }
-    .socialWork-container > .text {
+
+    .socialWork-container>.text {
         width: 100%;
+        padding: 1rem 1rem;
     }
-    .socialWork-container img{
+
+    .socialWork-container img {
         width: 100%;
         margin-top: 1rem;
     }
-    #text2{
+
+    #text2 {
         order: 0;
     }
-    #image2{
+
+    #image2 {
         order: 1;
     }
-    
+    .programs-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+    .program{
+        margin-top: 10vh;
+    }
+    .program-details{
+        width: 100%;
+        text-align: center;
+    }
 }
