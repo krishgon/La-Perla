@@ -18,7 +18,7 @@
     border-left: 4px solid var(--gold);
 }
 
-.measure-text, .social-work .socialWork-container .text p, .program-details {
+.measure-text, .social-work .socialWork-container .text li, .program-details {
     font-size: 1.25rem;
     letter-spacing: 1px;
     font-family: 'Dosis', sans-serif;
@@ -69,8 +69,8 @@
     width: 35vw;
 }
 
-.socialWork-container .text p {
-    margin-bottom: 1rem;
+.socialWork-container .text li {
+    margin-bottom: 2rem;
 }
 
 #container2 {
