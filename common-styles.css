@@ -101,15 +101,14 @@ nav input{
 
 /*Styling other Navbar Components*/
 .logo img{
-    width: max(12vw , 5rem);
+    width: max(10vw , 7.5rem);
 }
 
 
 .cta-1 button{
     font-size: 0.75rem;
     font-family: 'Roboto Slab', serif;
-    padding: 0.5vh 0;
-    width: 8vw;
+    padding: 0.25rem 1rem;
     cursor: pointer;
     background-color: transparent;
     color: white;
