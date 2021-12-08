@@ -7,7 +7,7 @@
 /*Carousel Section*/
 .sub-section-title{
     width: fit-content;
-    margin: 2rem auto;
+    margin: 5vh auto;
     font-size: 2.5rem;
     font-weight: 300;
     border-bottom: 3px solid var(--gold);
@@ -16,7 +16,8 @@
 .carousel-container{
     width: 100%;
     height: 80vh;
-    margin: 2rem 0;
+    margin: 5vh 0;
+    margin-bottom: 5rem;
     overflow-x: hidden;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
@@ -59,15 +60,17 @@ ol , li{
 
 .carousel-anchor{
     position: absolute;
-    top: 175vh;
+    top: 172.5vh;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-#room-slide-2{
-    left: 10px;
+#room-slide-1{
+    margin-left: -20px;
 }
 
 #room-slide-3{
-    left: 20px;
+    margin-left: 20px;
 }
 
 #room-slide-1:checked ~ .carousel-viewport{
