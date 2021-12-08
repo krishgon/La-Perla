@@ -3,7 +3,7 @@ body {
 }
 
 .landing-spot{
-    background-image: url('./Assets/hotels/landingSpotBG.jpg');
+    background-image: url('./assets/hotels/landingSpotBG.jpg');
     background-position: center;  
     background-size: cover;
 } 
