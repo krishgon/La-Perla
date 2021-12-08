@@ -35,6 +35,11 @@ nav{
     z-index: 5;  
 }
 
+label.hamburger{
+    width: 8vw;
+    justify-content: left;
+}
+
 .hamburger{
     display: flex;
     justify-content: center;
@@ -100,14 +105,15 @@ nav input{
 
 /*Styling other Navbar Components*/
 .logo img{
-    width: max(7.5vw , 5rem);
+    width: max(12vw , 5rem);
 }
 
 
 .cta-1 button{
     font-size: 0.75rem;
     font-family: 'Roboto Slab', serif;
-    padding: 0.5vh 2vw;
+    padding: 0.5vh 0;
+    width: 8vw;
     cursor: pointer;
     background-color: transparent;
     color: white;
