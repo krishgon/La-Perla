@@ -11,7 +11,7 @@
 :root {
     scroll-behavior: smooth;
 
-    /*Color Scheme and Root font size*/
+    /*Color Scheme*/
     --white: #fff;
     --black: #000000;
     --gold: #D7BE69;
@@ -126,15 +126,17 @@ nav input {
     color: black;
 }
 
-
+/* responsiveness for nav components */
 @media screen and (max-width: 800px) {
     .menuTitle {
         display: none;
     }
-    label.hamburger{
+
+    label.hamburger {
         width: 20vw;
     }
-    .cta-1 button{
+
+    .cta-1 button {
         font-size: 0.7rem;
         width: 20vw;
     }
@@ -275,6 +277,7 @@ nav input {
     background: var(--gold);
 }
 
+/* scrollbar styling */
 *::-webkit-scrollbar {
     display: block;
     width: 10px;

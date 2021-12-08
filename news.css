@@ -8,6 +8,7 @@ body {
     background-size: cover;
 }
 
+/* styling for news cards */
 .news-container {
     margin: 15vh 8vw;
     display: flex;
@@ -80,6 +81,7 @@ body {
     margin-left: 0.5rem;
 }
 
+/* responsive styling for the page */
 @media screen and (max-width: 768px) {
     .news-container .title {
         font-size: 2.5rem;

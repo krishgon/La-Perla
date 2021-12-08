@@ -8,6 +8,7 @@ body {
     background-size: cover;
 } 
 
+/* hotel list */
 .hotel-list{
     margin: 10vh 4vw;
     display: flex;
@@ -32,6 +33,7 @@ body {
     width: 100%;
 }
 
+/* hotel card styling */
 .hotel-card{
     background-color: white;
     box-shadow: 15px 15px 15px -4px rgba(0, 0, 0, 0.3);
@@ -94,6 +96,7 @@ body {
     font-size: 1.2rem;
 }
 
+/* responsiveness for cards */
 @media screen and (max-width: 600px){
     .hotel-details{
         flex-direction: column;
