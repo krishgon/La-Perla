@@ -19,10 +19,6 @@
     --grey: #595959;
 }
 
-body{
-    overflow-x: hidden;
-}
-
 /*Navbar Styling*/
 nav{
     display: flex;
@@ -179,10 +175,6 @@ nav input{
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-.footer-logo{
-    /* border-right: 1px solid white; */
 }
 
 .footer-logo img{
