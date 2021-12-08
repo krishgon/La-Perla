@@ -19,6 +19,10 @@
     --grey: #595959;
 }
 
+body{
+    overflow: overlay;
+}
+
 /*Navbar Styling*/
 nav{
     display: flex;
@@ -255,14 +259,24 @@ nav input{
     background: var(--gold);
 }
 
-::-webkit-scrollbar{
+*::-webkit-scrollbar {
+    display: block;
     width: 10px;
 }
-
-::-webkit-scrollbar-thumb{
-    background-color: var(--grey);
+  
+*::-webkit-scrollbar-button {
+    display: none;
 }
-
-::-webkit-scrollbar-track{
-    background-color: transparent;
+  
+*::-webkit-scrollbar-track {
+    background-color: #00000000;
+}
+  
+*::-webkit-scrollbar-track-piece {
+    background-color: #00000000;
+}
+  
+*::-webkit-scrollbar-thumb {
+    background-color: #00000040;
+    border: 1px solid #ffffff40;
 }
