@@ -64,8 +64,18 @@
     padding: 1rem 0;
 }
 
+.socialWork-img{
+    overflow: hidden;
+}
+
 .socialWork-container img {
     width: 35vw;
+    max-width: 35vw;
+    transition: all 0.25s linear;
+}
+
+.socialWork-container img:hover {
+    transform: scale(1.2);
 }
 
 .socialWork-container .text p {
