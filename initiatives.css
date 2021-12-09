@@ -1,14 +1,10 @@
 .landing-spot {
-    background-image: url('./Assets/initiatives/landingSpotBG.jpg');
+    background-image: url('./assets/initiatives/landingSpotBG.jpg');
     background-position: center;
     background-size: cover;
 }
 
-.covid19 {
-    margin: 10vh 4vw;
-}
-
-
+/* common title styling */
 .title {
     font-family: 'Playfair Display', serif;
     font-weight: 400;
@@ -18,10 +14,16 @@
     border-left: 4px solid var(--gold);
 }
 
+/* common body text styling */
 .measure-text, .social-work .socialWork-container .text p, .program-details {
     font-size: 1.25rem;
     letter-spacing: 1px;
     font-family: 'Dosis', sans-serif;
+}
+
+/* styling for covid measures */
+.covid19 {
+    margin: 10vh 4vw;
 }
 
 .measures-container {
@@ -47,6 +49,7 @@
     width: 40%;
 }
 
+/* styling for social initiatives */
 .social-work {
     margin: 10vh 4vw;
 }
@@ -90,6 +93,7 @@
     order: 0;
 }
 
+/* styling for membership programmes */
 .membership {
     margin: 10vh 4vw;
 }
@@ -131,7 +135,7 @@
     text-align: center;
 }
 
-
+/* adding responsiveness to the page */
 @media screen and (max-width: 888px) {
     .socialWork-container{
         flex-direction: column;

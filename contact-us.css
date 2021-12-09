@@ -1,5 +1,5 @@
 .landing-spot{
-    background-image: url('./Assets/contact-us/landingSpotBG.jpeg');
+    background-image: url('./assets/contact-us/landingSpotBG.jpeg');
     background-position: center;  
     background-size: cover;
 } 
@@ -8,7 +8,7 @@
     font-family: 'Playfair Display', serif;
     font-size: 2.25rem;
     font-weight: 400;
-    padding-left: 1vw;
+    padding-left: 1rem;
     border-left: 4px solid var(--gold);
 }
 

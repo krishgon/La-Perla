@@ -2,16 +2,16 @@
 
 
 /*Boilerplate*/
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     scroll-behavior: smooth;
-    
-    /*Color Scheme and Root font size*/
+
+    /*Color Scheme*/
     --white: #fff;
     --black: #000000;
     --gold: #D7BE69;
@@ -19,28 +19,28 @@
     --grey: #595959;
 }
 
-body{
+body {
     overflow: overlay;
 }
 
 /*Navbar Styling*/
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1vh 4vw;
     position: absolute;
     top: 0;
-    width: 100%;    
-    z-index: 5;  
+    width: 100%;
+    z-index: 5;
 }
 
-label.hamburger{
-    width: 8vw;
+label.hamburger {
+    width: 10vw;
     justify-content: left;
 }
 
-.hamburger{
+.hamburger {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,16 +49,16 @@ label.hamburger{
     color: white;
 }
 
-.hamburger img{
+.hamburger img {
     width: 1.5rem;
-    margin-right: 0.5rem; 
+    margin-right: 0.5rem;
 }
 
-nav input{
+nav input {
     display: none;
 }
 
-#navbar-list{
+#navbar-list {
     position: fixed;
     inset: 0;
     background-color: var(--gold);
@@ -67,11 +67,11 @@ nav input{
     z-index: 999;
 }
 
-#menu-toggle:checked ~ #navbar-list{
-    clip-path: circle(max(150vw , 150vh) at 0% 0%);
+#menu-toggle:checked~#navbar-list {
+    clip-path: circle(max(150vw, 150vh) at 0% 0%);
 }
 
-#navbar-list ul{
+#navbar-list ul {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -81,7 +81,7 @@ nav input{
 }
 
 /*Navbar Links*/
-#navbar-list ul li::after{
+#navbar-list ul li::after {
     content: '';
     display: block;
     background-color: white;
@@ -94,25 +94,26 @@ nav input{
     transition: all 0.2s linear;
 }
 
-#navbar-list ul li:hover::after{
+#navbar-list ul li:hover::after {
     transform: scaleX(1);
 }
 
-#navbar-list ul li a{
+#navbar-list ul li a {
     text-decoration: none;
     color: white;
 }
 
 /*Styling other Navbar Components*/
-.logo img{
-    width: max(10vw , 7.5rem);
+.logo img {
+    width: max(10vw, 7.5rem);
 }
 
 
-.cta-1 button{
+.cta-1 button {
     font-size: 0.75rem;
     font-family: 'Roboto Slab', serif;
-    padding: 0.25rem 1rem;
+    padding: 0.25rem 0;
+    min-width: 10vw;
     cursor: pointer;
     background-color: transparent;
     color: white;
@@ -120,30 +121,47 @@ nav input{
     transition: all 0.15s linear;
 }
 
-.cta-1 button:hover{
+.cta-1 button:hover {
     background-color: white;
     color: black;
 }
 
+/* responsiveness for nav components */
+@media screen and (max-width: 800px) {
+    .menuTitle {
+        display: none;
+    }
+
+    label.hamburger {
+        width: 20vw;
+    }
+
+    .cta-1 button {
+        font-size: 0.7rem;
+        width: 20vw;
+    }
+}
+
+
 /*Landing Spots*/
-.landing-spot{
+.landing-spot {
     height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
-.section-title{
+.section-title {
     font-family: 'Playfair Display';
     font-weight: 100;
     color: white;
-    font-size: max(5vw , 2.25rem);
+    font-size: max(5vw, 2.25rem);
     user-select: none;
     transition: all 0.25s linear;
 }
 
-.section-title::before,.section-title::after{
+.section-title::before, .section-title::after {
     content: '';
     background-color: white;
     display: inline-block;
@@ -153,23 +171,23 @@ nav input{
     width: 10vw;
 }
 
-.section-title::before{
+.section-title::before {
     right: 0.5em;
     margin-left: -10vw;
 }
 
-.section-title::after{
+.section-title::after {
     left: 0.5em;
     margin-right: -10vw;
 }
 
-.section-title:hover{
+.section-title:hover {
     text-shadow: 0 0 0.25rem white;
 }
 
 /*Footer*/
 .footer {
-    background-image:  linear-gradient(90deg, #0187BE , #004585);
+    background-image: linear-gradient(90deg, #0187BE, #004585);
     color: white;
     padding: 5vh 0;
 
@@ -179,51 +197,51 @@ nav input{
     align-items: center;
 }
 
-.footer-flex{
+.footer-flex {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.footer-logo img{
-    width: max(20vw , 10rem);
+.footer-logo img {
+    width: max(20vw, 10rem);
 }
 
-.footer-contact-details{
+.footer-contact-details {
     font-family: 'Roboto', serif;
     font-weight: 300;
     line-height: 1.375rem;
     font-size: 1.0625rem;
 }
 
-.footer-social-links img{
+.footer-social-links img {
     margin-top: 4vh;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(19deg) brightness(103%) contrast(101%);
     width: 1.75rem;
 }
 
-.footer-social-links img:hover{
+.footer-social-links img:hover {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(19deg) brightness(103%) contrast(101%) drop-shadow(0 0 1px white);
 }
 
-.footer-links{
+.footer-links {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2vw;
     row-gap: 2vh;
 }
 
-.footer-links a{
+.footer-links a {
     text-decoration: none;
     color: white;
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
 }
 
-.footer-links a:hover{
-    color: rgb(255,255,255);
+.footer-links a:hover {
+    color: rgb(255, 255, 255);
 }
 
 .copyright {
@@ -231,51 +249,52 @@ nav input{
     font-family: 'Roboto', serif;
 }
 
-@media screen and (max-width: 1280px){
-    .footer-flex{
+@media screen and (max-width: 1280px) {
+    .footer-flex {
         flex-direction: column;
     }
 
-    .footer-logo{
+    .footer-logo {
         border-right: none;
         border-bottom: 1px solid white;
     }
 
-    .footer-flex div{
+    .footer-flex div {
         padding: 2vh 0;
         text-align: center;
     }
-
 }
 
 /*Common Styling*/
-::-moz-selection{ /* Code for Firefox */
-    color: white;
-    background: var(--gold);
-}
-  
-::selection{
+::-moz-selection {
+    /* Code for Firefox */
     color: white;
     background: var(--gold);
 }
 
+::selection {
+    color: white;
+    background: var(--gold);
+}
+
+/* scrollbar styling */
 *::-webkit-scrollbar {
     display: block;
     width: 10px;
 }
-  
+
 *::-webkit-scrollbar-button {
     display: none;
 }
-  
+
 *::-webkit-scrollbar-track {
     background-color: #00000000;
 }
-  
+
 *::-webkit-scrollbar-track-piece {
     background-color: #00000000;
 }
-  
+
 *::-webkit-scrollbar-thumb {
     background-color: #00000040;
     border: 1px solid #ffffff40;

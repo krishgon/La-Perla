@@ -14,7 +14,6 @@ section{
     color: white;
 }
 
-/*Hero Spot Text*/
 .hero-spot-text{
     position: absolute;
     top: 50%;
@@ -64,7 +63,6 @@ section{
 
 @keyframes fadeInAnimation{
     0% {
-        /* transform: translateY(50px); */
         opacity: 0;
     }
     100% {
