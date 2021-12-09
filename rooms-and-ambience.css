@@ -18,11 +18,7 @@
     height: 80vh;
     margin: 5vh 0;
     margin-bottom: 5rem;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-
+    overflow: hidden;
 }
 
 .carousel-container::-webkit-scrollbar{
@@ -59,18 +55,27 @@ ol , li{
 }
 
 .carousel-anchor{
+    display: none;
+}
+
+.label-dot{
+    width: 20px;
+    height: 20px;
     position: absolute;
     top: 172.5vh;
     left: 50%;
     transform: translateX(-50%);
+    border-radius: 50%;
+    border: 4px solid black;
+    cursor: pointer;
 }
 
-#room-slide-1{
-    margin-left: -20px;
+#label-dot-1{
+    margin-left: -100px;
 }
 
-#room-slide-3{
-    margin-left: 20px;
+#label-dot-3{
+    margin-left: 100px;
 }
 
 #room-slide-1:checked ~ .carousel-viewport{
@@ -83,4 +88,8 @@ ol , li{
 
 #room-slide-3:checked ~ .carousel-viewport{
     transform: translateY(-160vh);
+}
+
+#room-slide-1:checked ~ .label-dot{
+    display: none;
 }
