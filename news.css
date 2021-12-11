@@ -63,22 +63,42 @@ body {
     align-items: center;
     transition: all 0.2s linear;
     margin-top: 2.5rem;
+    cursor: pointer;
 }
 
-.article-cta a {
+.article-cta{
     text-decoration: none;
     color: #144990;
-    font-size: 1.3rem;
     letter-spacing: 1px;
+    font-size: 1.2rem;
+    font-weight: 500;
     font-family: 'Dosis', sans-serif;
 }
 
 .article-cta img {
+    width: 2rem;
     filter: invert(22%) sepia(52%) saturate(1838%) hue-rotate(192deg) brightness(98%) contrast(96%);
 }
 
 .article-cta:hover {
     margin-left: 0.5rem;
+}
+
+/*Making read more functional*/
+.article-details input{
+    display: none;
+}
+
+.hidden-text{
+    display: none;
+}
+
+#article-1:checked ~ .hidden-text{
+    display: block;
+}
+
+#article-1:checked ~ .article-cta{
+    display: none;
 }
 
 /* responsive styling for the page */
