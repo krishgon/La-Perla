@@ -5,6 +5,10 @@
 } 
 
 /*Carousel Section*/
+.carousel-section{
+    margin-bottom: 7.5rem;
+}
+
 .sub-section-title{
     width: fit-content;
     margin: 5vh auto;
@@ -62,7 +66,6 @@ ol , li{
     width: 18px;
     height: 18px;
     position: absolute;
-    top: 172.5vh;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 50%;
@@ -70,28 +73,71 @@ ol , li{
     cursor: pointer;
 }
 
-#label-dot-1{
+#label-dot-1, #label-dot-2, #label-dot-3{
+    top: calc(160vh + 5rem);
+}
+
+#label-dot-4, #label-dot-5, #label-dot-6{
+    top: calc(245vh + 15.5rem);
+}
+
+#label-dot-1, #label-dot-4{
     margin-left: -100px;
 }
 
-#label-dot-3{
+#label-dot-3, #label-dot-6{
     margin-left: 100px;
 }
 
-#room-slide-1:checked ~ .carousel-viewport{
+#room-slide-1:checked ~ .carousel-viewport, #cuisine-slide-1:checked ~ .carousel-viewport{
     transform: translateY(0);
 }
 
-#room-slide-2:checked ~ .carousel-viewport{
+#room-slide-2:checked ~ .carousel-viewport, #cuisine-slide-2:checked ~ .carousel-viewport{
     transform: translateY(-80vh);
 }
 
-#room-slide-3:checked ~ .carousel-viewport{
+#room-slide-3:checked ~ .carousel-viewport, #cuisine-slide-3:checked ~ .carousel-viewport{
     transform: translateY(-160vh);
 }
 
-#room-slide-1:checked ~ #label-dot-1, #room-slide-2:checked ~ #label-dot-2, #room-slide-3:checked ~ #label-dot-3{
+#room-slide-1:checked ~ #label-dot-1, #room-slide-2:checked ~ #label-dot-2, #room-slide-3:checked ~ #label-dot-3,
+#cuisine-slide-1:checked ~ #label-dot-4, #cuisine-slide-2:checked ~ #label-dot-5, #cuisine-slide-3:checked ~ #label-dot-6
+{
     background-color: var(--blue);
     box-shadow: 0 0 10px var(--blue);
 }
 
+/*Carousel Text*/
+.carousel-text{
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    position: relative;
+    top: 100%;
+    transform: translateY(-100%);
+    padding: 1rem;
+}
+
+.carousel-text-title{
+    font-family: 'Playfair Display';
+    font-size: 2.5rem;
+}
+
+.room-text{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    font-size: 1.125rem;
+    font-family: 'Roboto', serif;
+    margin-bottom: 1rem;
+}
+
+.room-text-unit{
+    display: flex;
+    margin-right: 30px;
+}
+
+.room-text-image img{
+    width: 20px;
+    margin-right: 15px;
+}
