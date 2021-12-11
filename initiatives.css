@@ -137,6 +137,15 @@
 
 /* adding responsiveness to the page */
 @media screen and (max-width: 888px) {
+    .title{
+        font-size: 2rem;
+    }
+
+    .measure{
+        width: 75%;
+        margin: 0 auto;
+    }
+
     .socialWork-container{
         flex-direction: column;
     }
