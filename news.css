@@ -62,11 +62,9 @@ body {
     justify-content: flex-start;
     align-items: center;
     transition: all 0.2s linear;
-    margin-top: 2.5rem;
+    margin-top: 1.25rem;
     cursor: pointer;
-}
-
-.article-cta{
+    width: fit-content;
     text-decoration: none;
     color: #144990;
     letter-spacing: 1px;
@@ -74,6 +72,7 @@ body {
     font-weight: 500;
     font-family: 'Dosis', sans-serif;
 }
+
 
 .article-cta img {
     width: 2rem;
@@ -93,12 +92,16 @@ body {
     display: none;
 }
 
-#article-1:checked ~ .hidden-text{
+#article-1:checked ~ .hidden-text, #article-2:checked ~ .hidden-text, #article-3:checked ~ .hidden-text{
     display: block;
 }
 
-#article-1:checked ~ .article-cta{
+#article-1:checked ~ .article-cta, #article-2:checked ~ .article-cta, #article-3:checked ~ .article-cta{
     display: none;
+}
+
+.hidden-text p{
+    margin: 1.5rem 0;
 }
 
 /* responsive styling for the page */
