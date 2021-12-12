@@ -2,6 +2,7 @@
 <html lang="en">
 
 <!--Note for self: Remember to add comments and meta descriptions to each page.-->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +19,8 @@
     <!--Common navbar implementation for all pages-->
     <nav>
 
-        <label for="menu-toggle" class="hamburger"><img src="./assets/menu_white_36dp.svg" alt="hamburger-icon">MENU</label>
+        <label for="menu-toggle" class="hamburger"><img src="./assets/menu_white_36dp.svg"
+                alt="hamburger-icon">MENU</label>
         <input type="checkbox" name="menu-toggle" id="menu-toggle">
 
         <div id="navbar-list">
@@ -37,7 +39,7 @@
         <div class="logo"><a href="index.html"><img src="./assets/tachiLogoWhite.svg" alt="Company logo"></a></div>
 
         <div class="cta-1">
-            <a href="contact-us.html"><button>CONTACT US</button></a> 
+            <a href="contact-us.html"><button>CONTACT US</button></a>
         </div>
 
     </nav>
@@ -54,72 +56,87 @@
         <div class="carousel-container">
             <input type="radio" name="room-slide" id="room-slide-1" class="carousel-anchor" checked>
             <label for="room-slide-1" class="label-dot" id="label-dot-1"></label>
-            
+
             <input type="radio" name="room-slide" id="room-slide-2" class="carousel-anchor">
             <label for="room-slide-2" class="label-dot" id="label-dot-2"></label>
-            
+
             <input type="radio" name="room-slide" id="room-slide-3" class="carousel-anchor">
             <label for="room-slide-3" class="label-dot" id="label-dot-3"></label>
-            
+
 
             <div class="carousel-viewport">
                 <ol>
-                    <li class="carousel-cell" id="luxury-grande-room" style="background-image: url(./assets/RoomsAndAmbience/luxuryGrandeRoom.jpg)">      
+                    <li class="carousel-cell" id="standard-single-room"
+                        style="background-image: url(./assets/RoomsAndAmbience/luxuryGrandeRoom.jpg)">
                         <div class="carousel-text">
                             <div class="carousel-text-title">Luxury Grande Room</div>
                             <div class="room-text">
                                 <div class="room-text-unit">
-                                <div class="room-text-image"><img src="./Assets/RoomsAndAmbience/cube.svg" alt="cube icon"></div>
-                                <div class="room-text-content">33 Sq mt</div>
+                                    <div class="room-text-image"><img src="./Assets/RoomsAndAmbience/cube.svg"
+                                            alt="cube icon"></div>
+                                    <div class="room-text-content">20 Sq mt</div>
                                 </div>
 
                                 <div class="room-text-unit">
-                                <div class="room-text-image"><img src="./Assets/RoomsAndAmbience/groups_black_24dp.svg" alt="group icon"></div>
-                                <div class="room-text-content">3</div>
+                                    <div class="room-text-image"><img
+                                            src="./Assets/RoomsAndAmbience/groups_white_24dp.svg" alt="group icon">
+                                    </div>
+                                    <div class="room-text-content">2</div>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="carousel-cell" id="luxury-grande-room"
+                        style="background-image: url(./assets/RoomsAndAmbience/luxurySuite.jpg)">
+                        <div class="carousel-text">
+                            <div class="carousel-text-title">Luxury Suite</div>
+                            <div class="room-text">
+                                <div class="room-text-unit">
+                                    <div class="room-text-image"><img src="./Assets/RoomsAndAmbience/cube.svg"
+                                            alt="cube icon"></div>
+                                    <div class="room-text-content">29 Sq mt</div>
                                 </div>
 
                                 <div class="room-text-unit">
-                                <div class="room-text-image"><img src="./Assets/RoomsAndAmbience/wifi_white_36dp.svg" alt="wifi icon"></div>
-                                <div class="room-text-content">Complimentary Wifi</div>
+                                    <div class="room-text-image"><img
+                                            src="./Assets/RoomsAndAmbience/groups_white_24dp.svg" alt="group icon">
+                                    </div>
+                                    <div class="room-text-content">3</div>
+                                </div>
+                                <div class="room-text-unit">
+                                    <div class="room-text-image"><img
+                                            src="./Assets/RoomsAndAmbience/wifi_white_36dp.svg" alt="wifi icon"></div>
+                                    <div class="room-text-content">Complimentary Wifi</div>
                                 </div>
                             </div>
                         </div>
                     </li>
 
-                    <li class="carousel-cell" id="standard-single-room" style="background-image: url(./assets/RoomsAndAmbience/LuxuryRoom.jpg)">      
+                    <li class="carousel-cell" id="superior-double-room"
+                        style="background-image: url(./assets/RoomsAndAmbience/theTachiSuite.jpg)">
                         <div class="carousel-text">
-                            <div class="carousel-text-title">Standard Suite</div>
+                            <div class="carousel-text-title">The Tachi Suite</div>
                             <div class="room-text">
                                 <div class="room-text-unit">
-                                <div class="room-text-image"><img src="./Assets/RoomsAndAmbience/cube.svg" alt="cube icon"></div>
-                                <div class="room-text-content">20 Sq mt</div>
+                                    <div class="room-text-image"><img src="./Assets/RoomsAndAmbience/cube.svg"
+                                            alt="cube icon"></div>
+                                    <div class="room-text-content">35 Sq mt</div>
                                 </div>
 
                                 <div class="room-text-unit">
-                                <div class="room-text-image"><img src="./Assets/RoomsAndAmbience/groups_black_24dp.svg" alt="group icon"></div>
-                                <div class="room-text-content">1</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="carousel-cell" id="superior-double-room" style="background-image: url(./assets/RoomsAndAmbience/suiteRoom.jpg)">      
-                        <div class="carousel-text">
-                            <div class="carousel-text-title">Superior Suite</div>
-                            <div class="room-text">
-                                <div class="room-text-unit">
-                                <div class="room-text-image"><img src="./Assets/RoomsAndAmbience/cube.svg" alt="cube icon"></div>
-                                <div class="room-text-content">29 Sq mt</div>
+                                    <div class="room-text-image"><img
+                                            src="./Assets/RoomsAndAmbience/groups_white_24dp.svg" alt="group icon">
+                                    </div>
+                                    <div class="room-text-content">4</div>
                                 </div>
 
                                 <div class="room-text-unit">
-                                <div class="room-text-image"><img src="./Assets/RoomsAndAmbience/groups_black_24dp.svg" alt="group icon"></div>
-                                <div class="room-text-content">2</div>
-                                </div>
-
-                                <div class="room-text-unit">
-                                <div class="room-text-image"><img src="./Assets/RoomsAndAmbience/wifi_white_36dp.svg" alt="wifi icon"></div>
-                                <div class="room-text-content">Complimentary Wifi</div>
+                                    <div class="room-text-image"><img
+                                            src="./Assets/RoomsAndAmbience/wifi_white_36dp.svg" alt="wifi icon"></div>
+                                    <div class="room-text-content">Complimentary Wifi</div>
                                 </div>
                             </div>
                         </div>
@@ -135,52 +152,54 @@
         <div class="carousel-container">
             <input type="radio" name="cuisine-slide" id="cuisine-slide-1" class="carousel-anchor" checked>
             <label for="cuisine-slide-1" class="label-dot" id="label-dot-4"></label>
-            
+
             <input type="radio" name="cuisine-slide" id="cuisine-slide-2" class="carousel-anchor">
             <label for="cuisine-slide-2" class="label-dot" id="label-dot-5"></label>
-            
+
             <input type="radio" name="cuisine-slide" id="cuisine-slide-3" class="carousel-anchor">
             <label for="cuisine-slide-3" class="label-dot" id="label-dot-6"></label>
-            
+
 
             <div class="carousel-viewport">
                 <ol>
-                    <li class="carousel-cell" id="indian-cuisine" style="background-image: url(./assets/RoomsAndAmbience/indianCuisine.jpg)">      
+                    <li class="carousel-cell" id="indian-cuisine"
+                        style="background-image: url(./assets/RoomsAndAmbience/indianCuisine.jpg)">
                         <div class="carousel-text">
                             <div class="carousel-text-title">Indian Cuisine</div>
                             <div class="cuisine-text">
-                                The speciality Indian cuisine where hand ground spices and traditional 
-                                recipes spell magic on one’s palate blending culinary innovations with traditional methods.
+                                The speciality Indian cuisine where hand ground spices and traditional
+                                recipes spell magic on one's palate blending culinary innovations with traditional
+                                methods.
                             </div>
                         </div>
                     </li>
 
-                    <li class="carousel-cell" id="italian-cuisine" style="background-image: url(./assets/RoomsAndAmbience/italianCusine.jpg)"> 
+                    <li class="carousel-cell" id="italian-cuisine"
+                        style="background-image: url(./assets/RoomsAndAmbience/italianCusine.jpg)">
                         <div class="carousel-text">
                             <div class="carousel-text-title">Italian Cuisine</div>
-                            <div class="cuisine-text">Dishes, such as pisoto, osbubucco, Florentine steak, and incredible desserts, complement the picture of our Italian cuisine that is considered one of the healthiest in the world.
-                            </div>
-                        </div>         
+                            <div class="cuisine-text">Watch authentic Italian cuisine being conjured up at the open kitchen of the hotel's signature restaurant.</div>
+                        </div>
                     </li>
 
-                    <li class="carousel-cell" id="chinese-cuisine" style="background-image: url(./assets/RoomsAndAmbience/chinkiMomos.jpg)"> 
+                    <li class="carousel-cell" id="chinese-cuisine"
+                        style="background-image: url(./assets/RoomsAndAmbience/chineseCuisine.jpg)">
                         <div class="carousel-text">
-                            <div class="carousel-text-title">Chinese Cuisine</div>
-                            <div class="cuisine-text">
-                                Our Chinese cuisine offers up flavors to suit virtually any palate. There are hot, spicy notes that will set tongues tingling alongside lightly seasoned dishes that are friendly to even the most delicate taste buds.</div>
-                        </div>            
+                            <div class="carousel-text-title">Chinese cuisine</div>
+                            <div class="cuisine-text">Enjoy classic Chinese dishes with innovative contemporary twists, made with ingredients specially flown in from China.</div>
+                        </div>
                     </li>
                 </ol>
             </div>
 
     </section>
-    
 
-    
+
+
 
     <!--Common footer implementation for all pages-->
     <section class="footer">
-        
+
         <div class="footer-flex">
 
             <div class="footer-logo"><img src="./assets/tachiLogoWhite.svg" alt="brand logo"></div>

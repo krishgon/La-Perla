@@ -53,6 +53,7 @@ ol , li{
     width: 80vw;
     margin: 0 10vw;
     height: 100%;
+    background-position: center center;
     background-size: cover;
     scroll-snap-align: start;
     position: relative;
@@ -128,9 +129,8 @@ ol , li{
     flex-wrap: wrap;
     letter-spacing: 1px;
     font-size: 1.125rem;
-    font-family: 'Roboto', serif;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0;
+    font-family: 'Dosis', sans-serif;
     max-width: 60%;
 }
 
