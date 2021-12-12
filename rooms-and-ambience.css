@@ -155,3 +155,10 @@ ol , li{
         max-width: 100%;
     }
 }
+
+
+@media screen and (max-width : 400px){
+    .section-title{
+        font-size: 1.4rem;
+    }
+}
