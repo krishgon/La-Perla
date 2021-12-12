@@ -124,13 +124,15 @@ ol , li{
     font-size: 2.5rem;
 }
 
-.room-text{
+.room-text, .cuisine-text{
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
     font-size: 1.125rem;
     font-family: 'Roboto', serif;
     margin-bottom: 1rem;
+    max-width: 60%;
+    letter-spacing: 1px;
 }
 
 .room-text-unit{
