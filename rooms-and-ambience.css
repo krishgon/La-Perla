@@ -53,6 +53,7 @@ ol , li{
     width: 80vw;
     margin: 0 10vw;
     height: 100%;
+    background-position: center center;
     background-size: cover;
     scroll-snap-align: start;
     position: relative;
@@ -140,4 +141,11 @@ ol , li{
 .room-text-image img{
     width: 20px;
     margin-right: 15px;
+}
+
+
+.cuisine-text{
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
 }

@@ -65,9 +65,8 @@
 
 /*Contact Form*/
 .contact-form{
-    padding: 0 5vw;
     font-family: 'Mulish', sans-serif;
-    font-size: 1.0625rem;
+    font-size: 1.25rem;
 }
 
 .contact-form-input{
@@ -101,6 +100,20 @@
 .contact-form input[type=submit]:hover{
     background-color: black;
     color: white;
+}
+
+
+
+/* Removing number wheel from input type number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 /*Adding responsiveness*/
