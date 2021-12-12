@@ -128,7 +128,7 @@ ol , li{
     display: flex;
     flex-wrap: wrap;
     letter-spacing: 1px;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     margin: 10px 0;
     font-family: 'Dosis', sans-serif;
     max-width: 60%;
