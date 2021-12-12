@@ -53,6 +53,10 @@
     transition: all 0.25s;
 }
 
+.gallery-card-info{
+    padding: 2rem;
+}
+
 .gallery-card:hover .gallery-card-info {
     opacity: 1;
     transform: translateY(0px);
